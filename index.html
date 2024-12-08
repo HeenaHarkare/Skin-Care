@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+        <header>
+            <nav>
+                <div class="nav-upper">
+                <span id="logo">GlossierGleam</span>
+                <div class="wrap">
+                <input type="text"  placeholder="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </div>
+                <button id="login">Signup/Login</button>
+                <span id="to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></span>
+                </div>
+                <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#category">By Category</a></li>
+                <li><a href="#product">Products</a></li>
+
+                <li><a href="#">By Range</a>
+                  <ul class="dropdown">
+                      <li><a href="#">Rice Water Bright</a></li>
+                      <li><a href="#">Rice and Ceramide</a></li>
+                      <li><a href="#">White Seed</a></li>
+                      <li><a href="#">Chia Seed</a></li>
+                      <li><a href="#">Pomegranate & Collagen</a></li>
+                      <li><a href="#">Tee Tree</a></li>
+                      <li><a href="#">The Vegan Therapy</a></li>
+                      <li><a href="#">Natural Sun Eco</a></li>
+                      <li><a href="#">Mango Seed</a></li>
+                      <li><a href="#">Smart Peeling</a></li>
+                      <li><a href="#">Vitamin C</a></li>
+
+                  </ul>
+                </li>
+
+                <li><a href="#">Skin concerns</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Acne & Blemish</a></li>
+                    <li><a href="#">Pigmentation & Dark Spots</a></li>
+                    <li><a href="#">Blackheads & Pore Care</a></li>
+                    <li><a href="#">Dryness</a></li>
+                    <li><a href="#">Dullness</a></li>
+                    <li><a href="#">Anti-Aging</a></li>
+
+                  </ul>
+                </li>
+
+                <li><a href="#">Skin Types</a>
+                  <ul class="dropdown">
+                      <li><a href="#">Normal skin</a></li>
+                      <li><a href="#">Dry Skin</a></li>
+                      <li><a href="#">Oily Skin</a></li>
+                      <li><a href="#">Combination Skin</a></li>
+                      <li><a href="#">Sensitive Skin</a></li>
+                      <li><a href="#">Acne Prone Skin</a></li>
+
+                  </ul>
+                </li>
+
+                    
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#kit">Kits&Combos</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </nav>
+            <div id="signup-login-modal" class="modal">
+              <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <div class="modal-tabs">
+                      <button class="tablinks active" onclick="openTab(event, 'Signin')">Signin</button>
+                      <button class="tablinks" onclick="openTab(event, 'Signup')">Signup</button>
+                  </div>
+      
+                  <div id="Signin" class="tabcontent active">
+                      <h2>Welcome Back!</h2>
+                      <form id="signin-form">
+                          <label for="signin-username">Username:</label>
+                          <input type="text" id="signin-username" name="signin-username" required>
+      
+                          <label for="signin-password">Password:</label>
+                          <input type="password" id="signin-password" name="signin-password" required>
+      
+                          <button type="submit" class="login-button">Signin</button>
+                      </form>
+                  </div>
+      
+                  <div id="Signup" class="tabcontent">
+                      <h2>Join Us Today!</h2>
+                      <form id="signup-form">
+                          <label for="signup-username">Username:</label>
+                          <input type="text" id="signup-username" name="signup-username" required>
+      
+                          <label for="signup-password">Password:</label>
+                          <input type="password" id="signup-password" name="signup-password" required>
+      
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+      
+                          <button type="submit" class="login-button">Signup</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </header>
+        
+    
+    <main>
+      <!-- hero section start -->
+      <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <img src="./Assets/product.jpg" alt="Image 1">
+                <div class="text-container">
+                    <h1>Glossier Gleam </h1>
+                    <p>Glossier Gleam offers products for every skin type, providing solutions for all skin concerns and conditions.</p>
+            </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <img src="./Assets/product1.jpg" alt="Image 2">
+                <div class="text-container">
+                    <h1>Glossier Gleam</h1>
+                    <p>Glossier Gleam offers products for every skin type, providing solutions for all skin concerns and conditions.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide fade">
+                <img src="./Assets/product6.jpg" alt="Image 3">
+                <div class="text-container">
+                    <h1>Glossier Gleam</h1>
+                    <p>Glossier Gleam offers products for every skin type, providing solutions for all skin concerns and conditions.</p>
+                </div>
+            </div>
+            
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+    <!-- hero section end -->
+
+
+    <!-- about us start -->
+
+    <div class="section"  id="about">
+      <h1>About Us</h1>
+      
+  <div class="about-container">
+      
+      <p>Welcome to Glossier Gleam, your go-to destination for radiant, healthy skin. We believe that glowing skin is a reflection of     self-care, and our mission is to offer products that cater to every aspect of your skincare routine.
+
+          Our diverse range of products is carefully categorized to meet your unique needs. Whether you're looking for daily essentials or luxurious treatments, we have something for everyone. Explore our collections by category, where you'll find everything from cleansers and serums to moisturizers and masks. We also offer a variety of products across different price ranges, ensuring that high-quality skincare is accessible to all.
+          
+          At Glossier Gleam, we understand that every skin is unique. That's why our products are tailored to address various skin concerns, including acne, aging, hyperpigmentation, and sensitivity. We also provide options for different skin types—whether your skin is oily, dry, combination, or sensitive, we have the perfect solution for you.
+          
+          Discover the power of personalized skincare with Glossier Gleam. We’re here to help you achieve the healthy, glowing skin you deserve.
+        </p>
+        
+      </div>
+      <div class="about-content">
+          <h2>GlossierGleam</h2>
+          <p>Your skin's best friend, offering masks, moisturizers, exfoliants, toners, and nourishing oils.</p>
+          <img src="./Assets/about3.jpg" alt="">
+      </div>
+    </div>
+     <!-- about us end -->
+     <!-- category section -->
+     <div class="categories" id="category">
+      <h2>Top Categories</h2>
+  
+      <div class="img-container">  
+          <div class="img-wrapper">
+              <img src="./Assets/catogary1.jpg" alt="Triple Lipid Restore 2:4:2" class="image">
+              <div class="overlay">Triple Lipid Restore 2:4:2</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary2.jpg" alt="Facial Treatment Essense" class="image">
+              <div class="overlay">Facial Treatment Essense</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary3.jpg" alt="Glowstarter Moisturizer" class="image">
+              <div class="overlay">Glowstarter Moisturizer</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary4.jpg" alt="Olay Regenerist" class="image">
+              <div class="overlay">Olay Regenerist</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary5.jpg" alt="Xiran Suncreen" class="image">
+              <div class="overlay">Xiran Suncreen</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary6.jpg" alt="Laneige skin Cream" class="image">
+              <div class="overlay">Laneige skin Cream</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary7.jpg" alt="Renewal body Lotion" class="image">
+              <div class="overlay">Renewal body Lotion</div>
+          </div>
+          <div class="img-wrapper">
+              <img src="./Assets/catogary8.jpg" alt="Liquid Brilliance" class="image">
+              <div class="overlay">Liquid Brilliance</div>
+          </div>
+          <div class="img-wrapper">
+            <img src="./Assets/catogary9.jpg" alt="Liquid Brilliance" class="image">
+            <div class="overlay">Fenty Skin</div>
+        </div>
+      </div>
+  </div>
+
+<!-- category section end -->
+
+<!-- product section start -->
+
+   <div class="products" id="product">
+    <h2>Featured Product</h2>
+    
+   
+   
+        <div class="flip-card">
+         
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./Assets/image1.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Mars FaceWash kit</h1>
+              <p class="price">₹780.00</p>
+              <p>Mars FaceWash Kit: Revitalize and nourish your skin with our all-in-one, premium skincare solution for radiant results.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./Assets/image2.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Purity Serum</h1>
+              <p class="price">₹360.00</p>
+              <p>Unleash flawless skin with our Purity Serum, a potent formula delivering pure, radiant beauty in every drop.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        </div>
+     
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./Assets/image3.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Kanpy Floss Lip Scrub</h1>
+            <p class="price">₹230.00</p>
+            <p>Experience ultimate lip care with Kanpy Floss Lip Scrub, revealing soft, smooth lips through gentle exfoliation and hydration.</p>
+            <p><button>Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+    
+   
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Assets/image4.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Moha Nail Cream</h1>
+          <p class="price">₹196.00</p>
+          <p>Pamper your nails and feet with Moha Nail and Foot Cream, providing deep hydration and silky smoothness.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Assets/image5.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Pappermint Foot Cream</h1>
+          <p class="price">₹320.00</p>
+          <p>Transform your feet with Peppermint foot  cream, soothing and revitalizing tired soles for refreshed, healthy skin.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Assets/image6.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Harbostra Hand Cream</h1>
+          <p class="price">₹270.00</p>
+          <p>Revitalize your hands with Harbostra Hand Cream, delivering deep hydration and softness for smooth, nourished skin.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./Assets/image7.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Bhramarah Face Cream</h1>
+          <p class="price">₹290.00</p>
+          <p>Transform your complexion with Bhramarah Face Cream, offering deep nourishment and hydration for a radiant, youthful glow.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+ 
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="./Assets/image8.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Acure SkinCare Kit</h1>
+        <p class="price">₹890.00</p>
+        <p>Elevate your skincare routine with the Acure SkinCare Kit, offering complete nourishment, healthy complexion.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./Assets/image9.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Soap InLove Body Cream</h1>
+      <p class="price">₹230.00</p>
+      <p>Indulge in Soap InLove Body Cream, delivering luxurious hydration and softness for deeply nourished and smooth skin.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./Assets/image10.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Fabbeu SPF50 sunscreen</h1>
+      <p class="price">₹278.00</p>
+      <p>Shield your skin with Fabbeu SPF50 Sunscreen, offering high protection and a flawless finish for spot-free, sun-safe radiance.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./Assets/image11.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>EyeMax night Cream</h1>
+      <p class="price">₹356.00</p>
+      <p>Revive tired eyes with EyeMax Overnight Cream, delivering deep hydration and rejuvenation for a refreshed, morning.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./Assets/image12.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Pligrim's Facial Kit</h1>
+      <p class="price">₹684.00</p>
+      <p>Elevate your skincare routine with Pilgrim Gold Facial Kit, offering luxurious treatment for glowing, radiant skin with every use.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  </div> 
+  <!-- news latter start -->
+  <div class="newsletter-container">
+    <h2>Subscribe to our newsletter</h2>
+    <p>Get the latest skincare tips, exclusive offers, and product updates delivered straight to your inbox.</p>
+    <form class="newsletter-form" action="#" method="post">
+        <input type="email" placeholder="Your email" name="email" required>
+        <button type="submit" class="news-button">Subscribe</button>
+    </form>
+    <p class="disclaimer">100% free, Unsubscribe any time!</p>
+</div>
+<!-- news latter end -->
+  
+  
+  <!-- contact start -->
+  <div class="contact-container"  id="contact">
+    <div class="contact-content">
+        <h1>Keep In Touch</h1>
+        <label for="name">Name:</label>
+        <input type="text" name="name"  required placeholder="Enter Your Name">
+        <label for="email">Email:</label>
+        <input type="email"  name="email" required placeholder="Enter Your Email" >
+        <label for="message">Message:</label>
+
+        <textarea name="text" id="message" required placeholder="Enter Your Message"  style="height:200px;"></textarea>
+         <button  type="submit" class="contact-button" ><a href="index.html" >Submit</a></button>
+
+    </div>
+ </div>
+   <!-- contact end -->
+ </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+               
+                <img src="./Assets/footer.jpg" alt="no-img" style="width: 40%;">
+                <h3>GlossierGleam</h3>
+                <p>Glossier Gleam caters to every skin type with serums, lotions, sunscreens, facial kits, and indulgent creams.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="offer.html">Offer</a></li>
+                    <li><a href="kits.html">Kits & Combo</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="face.html">Face</a></li>
+                    <li><a href="body.html">Body</a></li>
+                    <li><a href="eye.html">Eye</a></li>
+                    <li><a href="sunscreens.html">Sunscreens</a></li>
+                    <li><a href="hand.html">Hand</a></li>
+                    <li><a href="nail-foot.html">Nail & Foot</a></li>
+                    <li><a href="lips.html">Lips</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Phone: +91-7972771998</p>
+                <p>Email: <a href="mailto:heenaharkare786@gmail.com">heenaharkare786@gmail.com</a></p>
+                <p>Address: Keshav Nagar, Mundwa, Pune Maharashtra-413002</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlossierGleam. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
